@@ -1,0 +1,35 @@
+{
+    "name": "opxcore/config-files",
+    "description": "The OpxCore config repository driver for дщсфд file system.",
+    "type": "library",
+    "keywords": [
+        "opxcore",
+        "config",
+        "repository"
+    ],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/opxcore/config-files/issues",
+        "source": "https://github.com/opxcore/config-files"
+    },
+    "authors": [
+        {
+            "name": "Lozovoy Vyacheslav",
+            "email": "opxcore@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4",
+        "opxcore/config-repository-interface": "^1.0.1",
+        "opxcore/config-environment": "^1.0.2",
+        "opxcore/array": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "OpxCore\\Config\\": "src/"
+        }
+    }
+}
