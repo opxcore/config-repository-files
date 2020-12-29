@@ -1,5 +1,5 @@
 {
-    "name": "opxcore/config-files",
+    "name": "opxcore/config-repository-files",
     "description": "The OpxCore config repository driver for дщсфд file system.",
     "type": "library",
     "keywords": [
@@ -9,8 +9,8 @@
     ],
     "license": "MIT",
     "support": {
-        "issues": "https://github.com/opxcore/config-files/issues",
-        "source": "https://github.com/opxcore/config-files"
+        "issues": "https://github.com/opxcore/config-repository-files/issues",
+        "source": "https://github.com/opxcore/config-repository-files"
     },
     "authors": [
         {
