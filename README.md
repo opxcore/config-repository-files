@@ -1,7 +1,7 @@
 # config-repository-files
 
 # Config files loader
-[![Build Status](https://travis-ci.org/opxcore/config-repository-files.svg?branch=main)](https://travis-ci.org/opxcore/config-repository-files)
+[![Build Status](https://travis-ci.com/opxcore/config-repository-files.svg?branch=main)](https://travis-ci.com/opxcore/config-repository-files)
 [![Coverage Status](https://coveralls.io/repos/github/opxcore/config-repository-files/badge.svg)](https://coveralls.io/github/opxcore/config-repository-files)
 [![Latest Stable Version](https://poser.pugx.org/opxcore/config-repository-files/v/stable)](https://packagist.org/packages/opxcore/config-repository-files)
 [![Total Downloads](https://poser.pugx.org/opxcore/config-repository-files/downloads)](https://packagist.org/packages/opxcore/config-repository-files)
