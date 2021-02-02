@@ -1,6 +1,6 @@
 {
     "name": "opxcore/config-repository-files",
-    "description": "The OpxCore config repository driver for дщсфд file system.",
+    "description": "The OpxCore config repository driver for local file system.",
     "type": "library",
     "keywords": [
         "opxcore",
@@ -12,6 +12,7 @@
         "issues": "https://github.com/opxcore/config-repository-files/issues",
         "source": "https://github.com/opxcore/config-repository-files"
     },
+    "homepage": "https://opxcore.com",
     "authors": [
         {
             "name": "Lozovoy Vyacheslav",
@@ -21,7 +22,6 @@
     "require": {
         "php": "^7.4",
         "opxcore/config-repository-interface": "^1.0.1",
-        "opxcore/config-environment": "^1.0.2",
         "opxcore/array": "^1.0"
     },
     "require-dev": {
