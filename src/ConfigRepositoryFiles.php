@@ -43,6 +43,8 @@ class ConfigRepositoryFiles implements ConfigRepositoryInterface
      * @param string|null $overrides
      *
      * @return  bool
+     *
+     * @throws  ConfigRepositoryException
      */
     public function load(array &$config, $profile = null, $overrides = null): bool
     {
