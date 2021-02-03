@@ -1,6 +1,7 @@
 <?php
 
 use OpxCore\Config\ConfigRepositoryFiles;
+use OpxCore\Config\Exceptions\ConfigRepositoryException;
 use PHPUnit\Framework\TestCase;
 
 class ConfigRepositoryFilesTest extends TestCase
@@ -154,5 +155,13 @@ class ConfigRepositoryFilesTest extends TestCase
         $config = [];
         $saved = $conf->save($config, 'empty');
         self::assertFalse($saved);
+    }
+
+    public function testBadFileLoad(): void
+    {
+        $conf = new ConfigRepositoryFiles($this->path);
+        $config = [];
+        $this->expectException(ConfigRepositoryException::class);
+        $conf->load($config, 'bad');
     }
 }

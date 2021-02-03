@@ -10,7 +10,10 @@
 
 namespace OpxCore\Config;
 
+use Error;
+use Exception;
 use OpxCore\Arr\Arr;
+use OpxCore\Config\Exceptions\ConfigRepositoryException;
 use OpxCore\Config\Interfaces\ConfigRepositoryInterface;
 
 class ConfigRepositoryFiles implements ConfigRepositoryInterface
@@ -82,6 +85,8 @@ class ConfigRepositoryFiles implements ConfigRepositoryInterface
      * @param string $path
      *
      * @return  array|null
+     *
+     * @throws  ConfigRepositoryException
      */
     protected function loadFromPath(string $path): ?array
     {
@@ -106,7 +111,13 @@ class ConfigRepositoryFiles implements ConfigRepositoryInterface
             $name = pathinfo($file, PATHINFO_FILENAME);
 
             if (trim($name) !== '') {
-                $config[$name] = require $file;
+                try {
+                    $config[$name] = require $file;
+
+                } catch (Error | Exception $e) {
+
+                    throw new ConfigRepositoryException("Error reading configuration file {$e->getFile()}:{$e->getLine()} {$e->getMessage()}");
+                }
             }
         }
 
