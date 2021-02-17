@@ -118,7 +118,7 @@ class ConfigRepositoryFiles implements ConfigRepositoryInterface
 
                 } catch (Error | Exception $e) {
 
-                    throw new ConfigRepositoryException("Error reading configuration file {$e->getFile()}:{$e->getLine()} {$e->getMessage()}");
+                    throw new ConfigRepositoryException("Error reading configuration file {$e->getFile()}:{$e->getLine()} {$e->getMessage()}", 0, $e);
                 }
             }
         }
